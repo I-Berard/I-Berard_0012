@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            font-size: 1.4rem;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(15, 13, 66);
+        }
+        input,select{
+            font-size: inherit;
+            
+        }
+        .bigboy{
+            border: 1px solid white;
+            padding: 10px;
+            background-color: rgb(22, 164, 141);
+            border-radius: 20px;
+        }
+        #heybro{
+            height: 2rem;  
+        }
+        .submit{
+            height: 50px;
+            width: 400px;
+            background-color: bisque;
+            border: 1px solid  bisque;
+            border-radius: 10px;
+        }
+        input:hover,select:hover{
+            background-color: aquamarine;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bigboy">
+        <form action="form.php" method="POST" id="My form">
+            Enter your name: <br>
+            <input type="text" id="name" name="name" value="Berard" placeholder="Your name"><br><br>
+            Enter your email: <br>
+            <input type="email" id="email" name="email" value="berard@hostname.com" placeholder="Your email" maxlength="60" ><br><br>
+            Enter your age: <br>
+            <input type="number" id="age" name="age"  value="18" min="1" max="120" placeholder="Your age"><br><br>
+            Choose your favourite color: <br>
+            <select name="color[]" id="heybro" multiple>
+                <option value="" disabled selected >Choose a color</option>
+                <option value="Blue" >Blue</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Purple">Purple</option>
+                <option value="Orange">Orange</option>
+                <option value="White">White</option>
+            </select><br><br>
+            
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
